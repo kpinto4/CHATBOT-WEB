@@ -289,3 +289,73 @@ footer {
 .chat-input-form button:hover {
     background-color: var(--azul-secundario);
 }
+
+/* --- ▼▼▼ SECCIÓN DE DISEÑO RESPONSIVE ▼▼▼ --- */
+
+/* Estilos para tabletas y pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .descripcion h2 {
+        font-size: 2em;
+    }
+
+    .descripcion .subtitulo {
+        font-size: 1em;
+    }
+
+    .puntos-clave {
+        gap: 20px;
+    }
+    
+    /* El cambio más grande: el chat se vuelve de pantalla completa */
+    #chatbot-container {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        /* La animación ahora viene desde abajo */
+        transform: translateY(100%);
+        opacity: 1; /* Opacidad ya no se usa para la transición principal */
+    }
+
+    #chatbot-container.active {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para teléfonos móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header .logo img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 20px 0;
+    }
+
+    .descripcion h2 {
+        font-size: 1.8em;
+    }
+
+    #chatbot-bubble {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #chatbot-bubble img {
+        height: 30px;
+        width: 30px;
+    }
+}
