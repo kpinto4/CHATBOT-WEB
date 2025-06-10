@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumo - Tu Chispazo Creativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/lumo-icono.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/lumo-icono.png" alt="Logo de Lumo">
+                <h1>Lumo</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="descripcion">
+                <h2>Tu Chispazo Creativo, Potenciado por IA</h2>
+                <p class="subtitulo">Lumo es tu asistente personal diseñado para romper las barreras de la creatividad. Ya sea que necesites una idea para un proyecto, inspiración para una obra de arte o un nuevo enfoque para resolver un problema, Lumo está aquí para ayudarte a empezar.</p>
+                
+                <div class="puntos-clave">
+                    <div class="punto">
+                        <h3>¿Cómo se Construyó?</h3>
+                        <p>Lumo nace de la combinación de tecnologías web estándar (HTML, CSS, JavaScript) y se conecta a través de una API con los potentes modelos de IA generativa de Google (Gemini), permitiendo una interacción inteligente y fluida.</p>
+                    </div>
+                    <div class="punto">
+                        <h3>¿Cuál es su Propósito?</h3>
+                        <p>Nuestro propósito es democratizar la inspiración. Queremos que cualquier persona, sin importar su campo, tenga acceso a una herramienta que fomente la creatividad y ayude a transformar las ideas en proyectos tangibles.</p>
+                    </div>
+                    <div class="punto">
+                        <h3>Capacidades Principales</h3>
+                        <ul>
+                            <li>Generación de ideas con contexto.</li>
+                            <li>Memoria de la conversación actual.</li>
+                            <li>Lluvia de ideas sobre cualquier tema.</li>
+                            <li>Planificación inicial de proyectos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Lumo - Un Proyecto de Inspiración</p>
+    </footer>
+
+    <div id="chatbot-bubble">
+        <img src="img/lumo-icono.png" alt="Abrir Chat de Lumo">
+    </div>
+
+    <div id="chatbot-container">
+        <div class="chat-header">
+            <div class="logo">
+                <img src="img/lumo-icono.png" alt="Icono Lumo">
+                <h2>Lumo ✨</h2>
+            </div>
+            <button id="new-chat-button" title="Iniciar nuevo chat">Nuevo Chat</button>
+            <button id="close-chat" aria-label="Cerrar chat">&times;</button>
+        </div>
+        <div class="chat-window">
+            </div>
+        <form class="chat-input-form">
+            <input type="text" id="message-input" placeholder="Pide una idea..." autocomplete="off">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
